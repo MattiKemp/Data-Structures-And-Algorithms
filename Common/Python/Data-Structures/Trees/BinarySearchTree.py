@@ -4,6 +4,27 @@ class BinarySearchTree():
     def __init__(self, root=None):
         self.root = root
 
+    def insert(self, val):
+        tempNode = root
+        while tempNode:
+            # Go to or create the right child
+            if(val > tempNode.val):
+                if(tempNode.right):
+                    tempNode = tempNode.right
+                else:
+                    tempNode.right = BinaryTreeNode(val)
+                    break
+            # Go to or create the left child
+            elif(val < tempNode.val):
+                if(tempNode.left):
+                    tempNode = tempNode.left
+                else:
+                    tempNode.left = BinaryTreeNode(val)
+                    break
+            # Value already in search tree so we quit
+            else:
+                break    
+
 def main():
     print("Binary Search Tree")
 
