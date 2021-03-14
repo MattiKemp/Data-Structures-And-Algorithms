@@ -1,2 +1,2 @@
 from . import AVLTree
-from .import Trie
+from . import Trie
