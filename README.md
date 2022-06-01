@@ -5,6 +5,7 @@ The idea is to essentially write a library for all the common and even some unco
 # Versions and Their Implementations:
 # Python
 ### Data-Structures
+- Singly and Doubly Linked List
   
 # C++
   
