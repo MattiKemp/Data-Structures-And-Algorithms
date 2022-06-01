@@ -3,7 +3,11 @@ Practice implementations of various Data Structures and Algorithms so I can get 
 The idea is to essentially write a library for all the common and even some uncommon data-structures and algorithms from the ground up. If a data-structure or algorithm requires a data-structure, it will use the implementation I have written.
 
 # Versions and Their Implementations:
-  # Python
+# Python
+-
   
-  # C++
+# C++
   
+
+# Java (discontinued)
+- Dynamic Array List
