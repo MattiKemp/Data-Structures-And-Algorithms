@@ -18,7 +18,8 @@ The idea is to essentially write a library for all the common and even some unco
   
 # C++
 ### Data-Structures
-
+- ArrayList
+- Min and Max heaps
 ### Algorithms
 
 # Java (discontinued)
