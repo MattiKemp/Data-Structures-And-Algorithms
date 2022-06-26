@@ -1,0 +1,120 @@
+In file included from b_tree.cpp:2:
+In file included from ./../lists/stack.cpp:2:
+./../lists/./deque.cpp:96:14: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'b_tree_node<int>')
+        cout << temp->val << " ";
+        ~~~~ ^  ~~~~~~~~~
+./../lists/stack.cpp:20:23: note: in instantiation of member function 'deque<b_tree_node<int>>::print' requested here
+    this->inter_deque.print();
+                      ^
+b_tree.cpp:15:16: note: in instantiation of member function 'stack<b_tree_node<int>>::print' requested here
+    fill_stack.print();
+               ^
+b_tree.cpp:136:28: note: in instantiation of member function 'b_tree<int>::~b_tree' requested here
+    b_tree<int> int_tree = b_tree<int>();
+                           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:759:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:792:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:799:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:806:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:820:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:866:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:873:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:881:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:1070:1: note: candidate function template not viable: no known conversion from 'b_tree_node<int>' to 'const std::error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:752:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'b_tree_node<int>')
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:813:1: note: candidate template ignored: could not match 'const _CharT *' against 'b_tree_node<int>'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:1053:1: note: candidate template ignored: could not match 'basic_string' against 'b_tree_node'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:1061:1: note: candidate template ignored: could not match 'basic_string_view' against 'b_tree_node'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:1078:1: note: candidate template ignored: could not match 'shared_ptr' against 'b_tree_node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:1097:1: note: candidate template ignored: could not match 'bitset' against 'b_tree_node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:1043:11: note: candidate template ignored: requirement 'is_base_of<std::ios_base, std::ostream &>::value' was not satisfied [with _Stream = std::ostream &, _Tp = b_tree_node<int>]
+_Stream&& operator<<(_Stream&& __os, const _Tp& __x)
+          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:1090:1: note: candidate template ignored: could not match 'unique_ptr' against 'b_tree_node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:194:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'std::ostream &(*)(std::ostream &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:198:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'basic_ios<std::basic_ostream<char>::char_type> &(*)(basic_ios<std::basic_ostream<char>::char_type> &)' (aka 'basic_ios<char> &(*)(basic_ios<char> &)') for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:203:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:206:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:207:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:208:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:209:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:210:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:211:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:212:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:213:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:214:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:215:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:216:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:217:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:218:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'const void *' for 1st argument; take the address of the argument with &
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:219:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'basic_streambuf<std::basic_ostream<char>::char_type> *' (aka 'basic_streambuf<char> *') for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:222:20: note: candidate function not viable: no known conversion from 'b_tree_node<int>' to 'std::nullptr_t' (aka 'nullptr_t') for 1st argument
+    basic_ostream& operator<<(nullptr_t)
+                   ^
+1 error generated.
